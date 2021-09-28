@@ -35,7 +35,7 @@ export class MapComponent implements OnInit {
 
     ngOnInit(): void {
     }
-
+    
     findLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((position) => {
