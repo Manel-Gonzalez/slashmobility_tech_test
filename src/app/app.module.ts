@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AgmCoreModule } from '@agm/core';
+
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -16,6 +17,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatIconModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,17 +25,20 @@ import { HeaderComponent } from './header/header.component';
 import { ProfileComponent } from './profile/profile.component';
 import { MapComponent } from './map/map.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PhotoeditorComponent } from './photoeditor/photoeditor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ProfileComponent,
-    MapComponent
+    MapComponent,
+    PhotoeditorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,MatToolbarModule,
+    AppRoutingModule,
+    MatToolbarModule,
     MatListModule,
     MatGridListModule,
     MatCardModule,
@@ -47,6 +52,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatProgressSpinnerModule,
     MatSliderModule,
     MatRadioModule,
+    MatIconModule,
     AgmCoreModule.forRoot({
       apiKey: ''    
    }),
