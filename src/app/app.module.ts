@@ -48,7 +48,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatSliderModule,
     MatRadioModule,
     AgmCoreModule.forRoot({
-      apiKey: ''    
+      apiKey: 'AIzaSyC_auZdldDcAwmGWqrDBpGWOrL2puvi6zE'    
    }),
     BrowserAnimationsModule
   ],
