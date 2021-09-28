@@ -1,0 +1,27 @@
+.map_container{
+    width: 100%;
+    margin-top: 6.5%;
+    padding:3% 0% 3% 0%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px  10px lightgray;
+
+}
+
+.loc_btn{
+    margin-top: 5%;
+    margin-left: 50%;
+    background-color: #76b2c8;
+    color: white;
+}
+
+.gps_icon{
+    width: 18px;
+    margin-right: 6px;
+    filter: invert(100%);
+}
+
+agm-map {
+  width: 500px;
+  height: 500px;
+}

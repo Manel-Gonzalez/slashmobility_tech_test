@@ -1,0 +1,34 @@
+<div class="profile_container">
+    <div class="banner_container">
+            <img class="cover" src="/assets/images/banner.jpg">
+            <img class="profile_img" src="/assets/images/user.png">
+    </div>
+
+    <div class="user_form">
+
+        <form novalidate>
+              <mat-form-field class="half-width">
+                <input matInput formControlName="username" placeholder="Username" type="text" required>
+                <mat-error ></mat-error>
+              </mat-form-field>
+              <mat-form-field class="half-width">
+                <input matInput formControlName="email" placeholder="Email" type="email"  required>
+                <mat-error ></mat-error>
+              </mat-form-field>
+              <mat-radio-group>
+                <h3 class="radio_title">Gender</h3>
+                <mat-radio-button class="quarter-width" value="m">Male</mat-radio-button>             
+                <mat-radio-button class="quarter-width" value="f">Female</mat-radio-button>
+              </mat-radio-group>
+              <mat-form-field class="full_width">
+                <textarea matInput formControlName="bio" placeholder="Bio" rows="4" ></textarea>
+              </mat-form-field>
+        </form>
+        <button type="submit" mat-button class="submit_btn"
+        >Save</button>
+    </div>
+    
+
+    
+
+</div>
