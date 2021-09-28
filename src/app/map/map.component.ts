@@ -25,8 +25,8 @@ interface Location {
 export class MapComponent implements OnInit {
     geocoder:any;
     public location:Location = {
-        lat: 51.678418,
-        lng: 7.809007,
+        lat: 0,
+        lng: 0,
         marker: {
         },
     };
