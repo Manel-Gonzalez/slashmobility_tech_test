@@ -1,0 +1,39 @@
+.profile_img {
+    width: 120px;
+    min-height: 120px;
+    max-height: auto;
+    background-color: lightgray;
+    margin-top: -12%;
+    margin-left: 40%;
+    align-content: center;
+    border-radius: 50%;
+    border: 5px solid white;
+    z-index: 1;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.edit_btn {
+    position: sticky;
+    background-color: tomato;
+    width: min-content;
+    padding: 3px;
+    border-radius: 50%;
+    margin-left: 60%;
+    margin-top: -35px;
+    z-index: 10;
+}
+
+.edit_icon{
+    color:white;
+    z-index: 9;
+}
+    
+
+#fileInput{
+    display: none;
+  }

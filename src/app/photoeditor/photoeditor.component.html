@@ -1,0 +1,15 @@
+<label class="hoverable" for="fileInput">
+<img class="profile_img" [src]="url ? url : '/assets/images/user.png'">
+<input id="fileInput" type='file' (change)="onSelectFile($event)" [disabled]="url">
+
+</label>
+
+<div class="edit_btn" *ngIf="url">
+    <label  >
+
+        <mat-icon class="edit_icon" >edit</mat-icon>
+        <input id="fileInput" type='file' (change)="onSelectFile($event)">
+
+
+    </label>
+</div>
