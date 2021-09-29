@@ -21,11 +21,13 @@ img{
     position: sticky;
     background-color: tomato;
     width: min-content;
-    padding: 3px;
+    padding: 4px;
     border-radius: 50%;
     margin-left: 60%;
     margin-top: -35px;
     z-index: 10;
+    border:2px solid whitesmoke ;
+    box-shadow: 5px 5px  10px lightgray;
 }
 
 .edit_icon{
