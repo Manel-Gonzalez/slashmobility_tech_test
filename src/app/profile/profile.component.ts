@@ -17,7 +17,7 @@ export class ProfileComponent implements OnInit {
     this.registerForm = this.formBuilder.group({
       username: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      gender:'',
+      gender:[''],
       bio:''
     });
   }
@@ -33,6 +33,7 @@ export class ProfileComponent implements OnInit {
     }
 
     // display form values on success
+
     alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value, null, 4));
 }
 

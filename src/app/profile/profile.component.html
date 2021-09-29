@@ -25,10 +25,10 @@
                 <div class="error_msg" *ngIf="f.email.errors.email">Email must be a valid email address</div>
               </div>
             </mat-form-field>
-            <mat-radio-group>
+            <mat-radio-group formControlName="gender">
               <h3 class="radio_title">Gender</h3>
-              <mat-radio-button class="quarter-width" value="m">Male</mat-radio-button>             
-              <mat-radio-button class="quarter-width" value="f">Female</mat-radio-button>
+              <mat-radio-button  class="quarter-width" value="m">Male</mat-radio-button>             
+              <mat-radio-button  class="quarter-width" value="f">Female</mat-radio-button>
             </mat-radio-group>
             <mat-form-field class="full_width">
               <textarea matInput formControlName="bio" placeholder="Bio" type="text"></textarea>
