@@ -13,16 +13,16 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Folder structure
 
 |--app<br/>
-    |-- [+] header<br/>
-    |-- [+] map<br/>
-    |-- [+] photoeditor<br/>
-    |-- [+] profile<br/>
-    |-- shared<br/>
-        |-- location.ts<br/>
-        |-- marker.ts<br/>
-    |-- assets<br/>
-        |-- [+] images<br/>
-    |-- app.module.ts<br/>
-    |-- app.component.ts<br/>
-    |-- app.component.css<br/>
-    |-- app.component.html
+....|-- [+] header<br/>
+....|-- [+] map<br/>
+....|-- [+] photoeditor<br/>
+....|-- [+] profile<br/>
+....|-- shared<br/>
+........|-- location.ts<br/>
+........|-- marker.ts<br/>
+....|-- assets<br/>
+........|-- [+] images<br/>
+....|-- app.module.ts<br/>
+....|-- app.component.ts<br/>
+....|-- app.component.css<br/>
+....|-- app.component.html
