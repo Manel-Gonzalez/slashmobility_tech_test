@@ -1,19 +1,6 @@
-import { Component, Input, ViewChild, NgZone, OnInit } from '@angular/core';
-import { MapsAPILoader, AgmMap } from '@agm/core';
-
-declare var google: any;
-
-interface Marker {
-  lat?: number;
-  lng?: number;
-}
-
-interface Location {
-  lat: number;
-  lng: number;
-  marker?: Marker;
-}
-
+import { Component, ViewChild, OnInit } from '@angular/core';
+import { AgmMap } from '@agm/core';
+import { Location } from '../shared/location'
 
 @Component({
   selector: 'app-map',
@@ -25,8 +12,8 @@ interface Location {
 export class MapComponent implements OnInit {
     geocoder:any;
     public location:Location = {
-        lat: 0,
-        lng: 0,
+        lat: 35.667320,
+        lng: 138.705506,
         marker: {
         },
     };

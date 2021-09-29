@@ -56,7 +56,7 @@ import { PhotoeditorComponent } from './photoeditor/photoeditor.component';
     MatRadioModule,
     MatIconModule,
     AgmCoreModule.forRoot({
-      apiKey: ''    
+      apiKey: 'AIzaSyB7EIqW8c-VeD6WSUFE1B5cBh0ccyjlFBM'    
    }),
     BrowserAnimationsModule,
     ReactiveFormsModule,

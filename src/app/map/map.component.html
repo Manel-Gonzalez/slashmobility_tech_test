@@ -1,10 +1,9 @@
-  
-<div class="map_container">
+  <div class="map_container">
     <agm-map [latitude]="location.lat" [longitude]="location.lng">
       <agm-marker [latitude]="location.marker.lat" [longitude]="location.marker.lng">
         <agm-info-window [disableAutoPan]="true">
-          Latitude = {{this.location.lat}} <br>
-          Longitude = {{this.location.lng}}
+          <b>Latitude</b> = {{this.location.lat}} <br>
+          <b>Longitude</b> = {{this.location.lng}}
         </agm-info-window>
       </agm-marker>
     </agm-map>

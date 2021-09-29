@@ -1,43 +1,40 @@
-
-
 <div class="profile_container">
-    <div class="banner_container">
-
-
-        <img id="cover_img" src="/assets/images/banner.jpg">
-
-           
+  <div class="banner_container">
+    <img id="cover_img" src="/assets/images/banner.jpg">
             <app-photoeditor></app-photoeditor>
-    </div>
-
-    <div class="user_form">
-      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-            <mat-form-field class="half-width">
-              <input matInput formControlName="username" placeholder="Username" type="text" [ngClass]="{ 'is-invalid': submitted && f.username.errors }"  required>
-              <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
-                <div class="error_msg" *ngIf="f.username.errors.required">Username is required</div>
-              </div>
-            </mat-form-field>
-            <mat-form-field class="half-width">
-              <input matInput formControlName="email" placeholder="Email" type="email"   class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" required>
-              <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                <div class="error_msg"  *ngIf="f.email.errors.required">Email is required</div>
-                <div class="error_msg" *ngIf="f.email.errors.email">Email must be a valid email address</div>
-              </div>
-            </mat-form-field>
-            <mat-radio-group formControlName="gender">
-              <h3 class="radio_title">Gender</h3>
-              <mat-radio-button  class="quarter-width" value="m">Male</mat-radio-button>             
-              <mat-radio-button  class="quarter-width" value="f">Female</mat-radio-button>
-            </mat-radio-group>
-            <mat-form-field class="full_width">
-              <textarea matInput formControlName="bio" placeholder="Bio" type="text"></textarea>
-            </mat-form-field>
-            <button type="submit" mat-raised-button class="submit_btn"
-            >SAVE</button>
-      </form>
-
   </div>
 
+  <div class="user_form">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <mat-form-field class="half-width">
+        <input matInput formControlName="username" placeholder="Username" type="text" 
+          [ngClass]="{ 'is-invalid': submitted && f.username.errors }"  required>
+        <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+          <div class="error_msg" *ngIf="f.username.errors.required">Username is required</div>
+        </div>
+      </mat-form-field>
 
+      <mat-form-field class="half-width">
+        <input matInput formControlName="email" placeholder="Email" type="email"  
+          class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" required>
+        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+          <div class="error_msg"  *ngIf="f.email.errors.required">Email is required</div>
+          <div class="error_msg" *ngIf="f.email.errors.email">Email must be a valid email address</div>
+        </div>
+      </mat-form-field>
+
+      <mat-radio-group formControlName="gender">
+        <h3 class="radio_title">Gender</h3>
+        <mat-radio-button  class="quarter-width" value="m">Male</mat-radio-button>             
+        <mat-radio-button  class="quarter-width" value="f">Female</mat-radio-button>
+      </mat-radio-group>
+
+      <mat-form-field class="full_width">
+        <textarea matInput formControlName="bio" placeholder="Bio" type="text"></textarea>
+      </mat-form-field>
+
+      <button type="submit" mat-raised-button class="submit_btn">SAVE</button>
+
+    </form>
+  </div>
 </div>
