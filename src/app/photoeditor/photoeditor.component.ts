@@ -6,14 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./photoeditor.component.css']
 })
 export class PhotoeditorComponent implements OnInit {
+  
+  // Class atributes
+  url :string;
 
   constructor() { }
 
   ngOnInit() {
   }
-
-  url :string;
-
+  
+  /*
+  * On event, opens the file explorer and changes the url to the selected file.
+  * @param event
+  */
   onSelectFile(event) {
     if (event.target.files && event.target.files[0]) {
       var reader = new FileReader();
@@ -24,8 +29,5 @@ export class PhotoeditorComponent implements OnInit {
         this.url =  reader.result as string;
       }
     }
-  }
-  public delete(){
-    this.url = null;
   }
 }
