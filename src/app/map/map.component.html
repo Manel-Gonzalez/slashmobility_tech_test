@@ -1,0 +1,13 @@
+  <div class="map_container">
+    <agm-map [latitude]="location.lat" [longitude]="location.lng">
+      <agm-marker [latitude]="location.marker.lat" [longitude]="location.marker.lng">
+        <agm-info-window [disableAutoPan]="true">
+          <b>Latitude</b> = {{this.location.lat}} <br>
+          <b>Longitude</b> = {{this.location.lng}}
+        </agm-info-window>
+      </agm-marker>
+    </agm-map>
+    <button mat-raised-button class="loc_btn" (click)="findLocation()">
+      <img class="gps_icon" src="/assets/images/gps.png" />GET MY LOCATION
+    </button>
+  </div>

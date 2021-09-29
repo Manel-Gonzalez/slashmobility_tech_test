@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif; 
+    background-color: #f1f1f1;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+    border-color:tomato; 
+  }
+  
+  .mat-radio-button.mat-accent .mat-radio-inner-circle{
+    color:tomato;
+    background-color:tomato ;
+  }
+  
+  .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
+      background-color:tomato;
+  }

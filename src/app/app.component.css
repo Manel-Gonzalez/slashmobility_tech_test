@@ -1,0 +1,18 @@
+::ng-deep * {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    justify-content:  center;
+    margin: auto;
+}
+#map_container{
+    margin-left: 50px;
+}
+#profile_container{
+    margin-left: 50px;
+}
