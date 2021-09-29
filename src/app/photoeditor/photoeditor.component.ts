@@ -27,6 +27,5 @@ export class PhotoeditorComponent implements OnInit {
   }
   public delete(){
     this.url = null;
-    
   }
 }
