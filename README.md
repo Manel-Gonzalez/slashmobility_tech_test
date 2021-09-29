@@ -7,7 +7,9 @@ It is a SPA, simulating an user profile in a backoffice app. It shows two differ
 ## How to run
 
 Insert a valid Google Mas API Key in the app.module.ts file at line 59, on: `apiKey: 'PUT_YOUR_KEY_HERE'`.<br/>
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm install` for installing the node modules, then run `ng serve`.<br/>
+ Navigate to `http://localhost:4200/`.<br/>
+ You can also launch the app on this [Stackblitz](https://stackblitz.com/github/Manel-Gonzalez/slashmobility_tech_test) url.
 
 
 ## Folder structure
